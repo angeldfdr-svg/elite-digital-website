@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EliteDigital | Computadores, Componentes, Gaming e Tecnologia</title>
-<meta name="description" content="Loja online EliteDigital: desktops, portáteis, placas gráficas, periféricos, redes e muito mais, com os melhores preços em Portugal.">
-<meta property="og:title" content="EliteDigital – Tecnologia ao melhor preço">
+<meta name="description" content="EliteDigital: desktops, portáteis, placas gráficas, componentes, periféricos, redes e muito mais.">
+<meta name="theme-color" content="#0b5fff">
+<meta property="og:title" content="EliteDigital – Computadores, componentes e tecnologia">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_PT">
-<link rel="canonical" href="https://www.elitedigital.pt/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/styles.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"EliteDigital","url":"https://www.elitedigital.pt/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"EliteDigital"}</script>
 </head>
 <body>
 <a class="skip" href="#main">Saltar para o conteúdo</a>
@@ -20,32 +20,34 @@
   <div class="container row">
     <button class="icon-btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <a class="logo" href="#" aria-label="EliteDigital – início">Elite<b>Digital</b></a>
-    <form class="search" id="search" role="search"><label class="sr" for="q">Procurar produtos</label><input id="q" type="search" placeholder="Procurar produtos, marcas, referências…"><button>Procurar</button></form>
-    <a class="icon-btn" href="#">Iniciar sessão</a>
-    <button class="icon-btn" id="cart-btn" aria-label="Abrir carrinho">Carrinho <span class="badge" id="count">0</span></button>
+    <form class="search" id="search" role="search"><label class="sr" for="q">Procurar produtos</label><input id="q" type="search" placeholder="Procurar produtos…"><button>Procurar</button></form>
+    <a class="icon-btn login" href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Iniciar sessão</a>
+    <button class="icon-btn" id="cart-btn" aria-label="Carrinho" aria-expanded="false" aria-controls="drawer">Carrinho <span class="badge" id="count">0</span></button>
   </div>
   <nav class="nav" id="nav" aria-label="Categorias"><div class="container"><ul id="nav-list"></ul></div></nav>
 </header>
 <main id="main">
   <section class="hero"><div class="container">
-    <div><h1>Tecnologia para trabalhar, jogar e criar.</h1><p>Desktops, componentes, periféricos e redes das melhores marcas, com entrega em Portugal e assistência técnica.</p><a class="btn" href="#produtos">Ver produtos</a><a class="btn ghost" href="#categorias">Categorias</a></div>
+    <div><h1>Tecnologia para trabalhar, jogar e criar.</h1><p>Desktops, portáteis, placas gráficas, periféricos e redes de marcas como Asus, MSI, Gigabyte e INSYS, com serviços de entrega e assistência técnica.</p><a class="btn" href="#produtos">Ver produtos</a><a class="btn ghost" href="#categorias">Categorias</a></div>
     <div class="hero-card"><small>Em destaque</small><strong>PC Gaming INSYS</strong><p>i5 · GTX 1660S · 16GB · 512GB SSD</p><b>549,00 €</b> <s>881,52 €</s></div>
   </div></section>
   <div class="container trust">
-    <div><b>Entregas</b><span>Serviço de entrega em todo o país</span></div>
+    <div><b>Entregas</b><span>Serviços de entrega</span></div>
     <div><b>Devoluções</b><span>Política de devoluções clara</span></div>
     <div><b>Assistência</b><span>Reparação, manutenção e remota</span></div>
     <div><b>Garantia</b><span>Seguros de garantia extra</span></div>
   </div>
   <section class="block" id="categorias"><div class="container"><h2>Categorias</h2><div class="cats" id="cats"></div></div></section>
-  <section class="block" id="produtos"><div class="container"><h2>Produtos e promoções</h2><div class="filters" id="filters" role="group" aria-label="Filtrar produtos"></div><div class="grid" id="grid" aria-live="polite"></div></div></section>
+  <section class="block" id="produtos"><div class="container"><h2>Produtos e promoções</h2><div class="filters" id="filters" role="group" aria-label="Filtrar produtos"></div><p class="count" id="count-info" role="status"></p><div class="grid" id="grid" aria-live="polite"></div></div></section>
 </main>
-<aside class="drawer" id="drawer" aria-label="Carrinho"><div><b>O seu carrinho</b> <button class="icon-btn" id="cart-close" style="float:right">Fechar</button></div><ul id="cart-list"></ul><p><b>Total: <span id="total"></span></b></p><a class="btn" href="#">Finalizar compra</a></aside>
+<aside class="drawer" id="drawer" role="dialog" aria-labelledby="drawer-title"><div class="drawer-head"><h2 id="drawer-title">O seu carrinho</h2><button class="icon-btn" id="cart-close">Fechar</button></div><ul id="cart-list"></ul><p><b>Total: <span id="total"></span></b></p><p class="msg" id="cart-msg" role="status"></p><button class="btn" id="checkout">Finalizar compra</button></aside>
 <footer class="footer"><div class="container"><div class="cols">
-  <div><h4>Serviços</h4><a href="#">Assistência Técnica</a><a href="#">Reparação e Manutenção</a><a href="#">Seguros e Garantias</a></div>
-  <div><h4>Entregas e Devoluções</h4><a href="#">Serviços de Entrega</a><a href="#">Política de Devoluções</a></div>
-  <div><h4>EliteDigital</h4><a href="#">Novidades</a><a href="#">Campanhas</a><a href="#">Lojas</a><a href="#">Franchising</a></div>
-</div><small>© <span id="year"></span> EliteDigital. Projeto de recriação para fins de demonstração.</small></div></footer>
-<script type="module" src="js/main.js"></script>
+  <div><h4>Serviços</h4><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Assistência Técnica</a><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Reparação e Manutenção</a><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Seguros e Garantias</a></div>
+  <div><h4>Entregas e Devoluções</h4><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Serviços de Entrega</a><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Política de Devoluções</a></div>
+  <div><h4>EliteDigital</h4><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Novidades</a><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Campanhas</a><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Lojas</a><a href="https://www.elitedigital.pt/" target="_blank" rel="noopener">Franchising</a></div>
+</div><small>© <span id="year"></span> EliteDigital. Projeto de recriação para fins de demonstração, sem ligação à loja oficial.</small></div></footer>
+<noscript><p style="padding:1rem;text-align:center">Ative o JavaScript para ver o catálogo.</p></noscript>
+<script src="data/products.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

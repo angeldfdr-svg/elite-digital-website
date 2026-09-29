@@ -1,8 +1,8 @@
 // Dados reais retirados da página inicial de elitedigital.pt (nomes, preços e disponibilidade).
-export const categories = [
+const categories = [
   { id: "computadores", name: "Computadores", subs: ["Desktops", "Notebooks", "Servidores", "Software", "Ponto de Venda"] },
   { id: "mobilidade", name: "Mobilidade", subs: ["Tablets", "Smartphones", "Wearables", "Drones"] },
-  { id: "componentes", name: "Componentes", subs: ["Placas Gráficas", "Processadores", "Memória RAM", "Armazenamento", "Motherboards"] },
+  { id: "componentes", name: "Componentes", subs: ["Placas Gráficas", "Processadores", "Memória RAM", "Armazenamento", "Motherboards", "Refrigeração", "Caixas"] },
   { id: "imagem-som", name: "Imagem & Som", subs: ["Monitores", "Televisores", "Projectores", "Vídeo Vigilância"] },
   { id: "gaming", name: "Gaming & Modding", subs: ["Consolas", "Cadeiras Gaming", "Realidade Virtual", "Modding"] },
   { id: "perifericos", name: "Periféricos", subs: ["Teclados", "Ratos", "Impressoras", "UPS", "Cabos"] },
@@ -10,7 +10,7 @@ export const categories = [
   { id: "casa", name: "Casa & Escritório", subs: ["Escritório", "Grandes Domésticos", "Iluminação", "Domótica"] },
 ];
 
-export const products = [
+const products = [
   { id: 1, cat: "Desktops Gaming", name: "Computador Gaming INSYS PbA, i7-12700F, RTX3060, 16GB RAM, SSD 512GB, W11", brand: "INSYS", ref: "2-PBA#I7RTX3060-536", price: 1312.52, stock: false },
   { id: 2, cat: "Desktops Gaming", name: "Computador Gaming INSYS PbA i5-12400F, RTX3060, 16GB RAM, 512GB SSD, Windows 11", brand: "INSYS", ref: "2-PBA#I5RTX3060-135", price: 598.99, old: 1181.52, stock: false },
   { id: 3, cat: "Desktops Gaming", name: "PC Gaming INSYS Pwrd by ASUS i5 GTX1660S 16GB 512GB SSD Linux", brand: "INSYS", ref: "2-PBA#I5GTX1660S-518", price: 549.0, old: 881.52, stock: true },
@@ -24,3 +24,5 @@ export const products = [
   { id: 11, cat: "UPS Diversas", name: "UPS Phasak Ottima 660VA, 380W, 2 Schuko, Interactiva e Proteção", brand: "Phasak", ref: "371-PH7266", price: 41.91, old: 46.9, stock: true },
   { id: 12, cat: "Caixas de Computador", name: "Caixa Gamemax Forge AB ATX, 2xUSB, 1xType-C, s/PSU", brand: "Gamemax", ref: "559-12380100001", price: 36.9, old: 38.9, stock: true },
 ];
+
+window.ELITE = { categories, products };
