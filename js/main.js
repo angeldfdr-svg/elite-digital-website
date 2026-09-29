@@ -22,7 +22,7 @@
   // ---- Componentes reutilizáveis ----
   const NavItem = c => `<li><a class="top" href="#produtos" data-cat="${c.id}">${c.name}</a><div class="dropdown"><a href="#produtos" data-cat="${c.id}">Ver tudo</a>${c.subs.map(s => `<a href="#produtos" data-sub="${esc(s)}">${esc(s)}</a>`).join("")}</div></li>`;
   const CatCard = c => `<a class="cat" href="#produtos" data-cat="${c.id}"><h3>${c.name}</h3><p>${c.subs.slice(0, 3).join(" · ")}</p></a>`;
-  const ProductCard = p => `<article class="card"><div class="img" role="img" aria-label="Marca ${esc(p.brand)}">${p.old ? `<span class="tag">-${Math.round((1 - p.price / p.old) * 100)}%</span>` : ""}${esc(p.brand)}</div>
+  const ProductCard = p => `<article class="card"><div class="img" role="img" aria-label="Marca ${esc(p.brand)}" ${p.image ? `style="background-image: url('${p.image}'); background-size: cover; background-position: center; color: transparent;"` : ""}>${p.old ? `<span class="tag">-${Math.round((1 - p.price / p.old) * 100)}%</span>` : ""}${esc(p.brand)}</div>
 <div class="body"><small>${esc(p.cat)}<br>Ref. ${esc(p.ref)}</small><h3>${esc(p.name)}</h3>
 <span class="stock ${p.stock ? "ok" : "no"}">${p.stock ? "Disponível" : "Esgotado"}</span>
 <div class="price">${eur(p.price)}${p.old ? `<s aria-label="preço anterior">${eur(p.old)}</s>` : ""}</div>
