@@ -39,6 +39,16 @@
   </div>
   <section class="block" id="categorias"><div class="container"><h2>Categorias</h2><div class="cats" id="cats"></div></div></section>
   <section class="block" id="produtos"><div class="container"><h2>Produtos e promoções</h2><div class="filters" id="filters" role="group" aria-label="Filtrar produtos"></div><p class="count" id="count-info" role="status"></p><div class="grid" id="grid" aria-live="polite"></div></div></section>
+  <section class="block" style="background: var(--surface); border-top: 1px solid var(--line); margin-top: 2rem;">
+    <div class="container" style="text-align: center; max-width: 600px;">
+      <h2>Subscreve a nossa Newsletter</h2>
+      <p style="color: var(--muted); margin-bottom: 1.5rem;">Recebe as melhores promoções de tecnologia e gaming diretamente no teu email.</p>
+      <form style="display: flex; gap: 0.5rem;" onsubmit="event.preventDefault(); alert('Subscrito com sucesso!');">
+        <input type="email" placeholder="O teu endereço de email" required style="flex: 1; padding: 0.8rem 1rem; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--text); font: inherit;">
+        <button class="btn">Subscrever</button>
+      </form>
+    </div>
+  </section>
 </main>
 <aside class="drawer" id="drawer" role="dialog" aria-labelledby="drawer-title"><div class="drawer-head"><h2 id="drawer-title">O seu carrinho</h2><button class="icon-btn" id="cart-close">Fechar</button></div><ul id="cart-list"></ul><p><b>Total: <span id="total"></span></b></p><p class="msg" id="cart-msg" role="status"></p><button class="btn" id="checkout">Finalizar compra</button></aside>
 <footer class="footer"><div class="container"><div class="cols">

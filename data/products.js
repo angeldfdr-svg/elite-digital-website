@@ -23,6 +23,10 @@ const products = [
   { id: 10, cat: "Teclados", name: "Teclado USB INSYS MT8-K815 - HUB USB, Silencioso, Teclas Laser, PT", brand: "INSYS", ref: "2-MT8-K815", price: 8.9, old: 9.9, stock: true, image: "img/gaming_keyboard_1790675532577.jpg" },
   { id: 11, cat: "UPS Diversas", name: "UPS Phasak Ottima 660VA, 380W, 2 Schuko, Interactiva e Proteção", brand: "Phasak", ref: "371-PH7266", price: 41.91, old: 46.9, stock: true, image: "img/pc_case_1790675542850.jpg" },
   { id: 12, cat: "Caixas de Computador", name: "Caixa Gamemax Forge AB ATX, 2xUSB, 1xType-C, s/PSU", brand: "Gamemax", ref: "559-12380100001", price: 36.9, old: 38.9, stock: true, image: "img/pc_case_1790675542850.jpg" },
+  { id: 13, cat: "Desktops Gaming", name: "Desktop Gaming ASUS ROG Strix G15, i7-12700F, RTX 3070", brand: "Asus", ref: "ROG-G15", price: 1549.99, old: 1899.99, stock: true, image: "img/desktop_gaming_1_1790675481434.jpg" },
+  { id: 14, cat: "Refrigeração Desktops", name: "Water Cooler NZXT Kraken X73 RGB 360mm", brand: "NZXT", ref: "RL-KRX73-R1", price: 189.90, stock: true, image: "img/water_cooler_1790675521601.jpg" },
+  { id: 15, cat: "Teclados", name: "Teclado Mecânico SteelSeries Apex Pro TKL", brand: "SteelSeries", ref: "64734", price: 199.99, stock: false, image: "img/gaming_keyboard_1790675532577.jpg" },
+  { id: 16, cat: "Placas Gráficas Internas", name: "Placa Gráfica Gigabyte RTX 4080 AERO OC 16GB GDDR6X", brand: "Gigabyte", ref: "GV-N4080AERO OC-16GD", price: 1299.90, old: 1450.00, stock: true, image: "img/gpu_msi_rtx_1790675510678.jpg" },
 ];
 
 window.ELITE = { categories, products };
